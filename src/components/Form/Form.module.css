@@ -1,0 +1,89 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 300px;
+}
+
+.fieldsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.itemHeader {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.label {
+  color: #1f1f1f;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.error {
+  color: #c91a1a;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.field {
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #1f1f1f;
+  font-size: 14px;
+}
+
+.field:hover,
+.field:focus {
+  border-color: #901dce;
+}
+
+.textarea {
+  height: 150px;
+  resize: none;
+}
+
+.interval {
+  width: 100px;
+}
+
+.button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: background-color 100ms ease;
+}
+
+.startButton {
+  background-color: #882fb8;
+  color: white;
+}
+
+.startButton:hover {
+  background-color: #ab48e0;
+}
+.startButton:active {
+  background-color: #6b2193;
+}
+
+.stopButton {
+  background-color: #c91a1a;
+  color: white;
+}
+
+.stopButton:hover {
+  background-color: #db3636;
+}
+.stopButton:active {
+  background-color: #b51e1e;
+}
