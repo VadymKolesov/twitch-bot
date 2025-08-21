@@ -134,7 +134,11 @@ export default function BotForm() {
                     (bot.isRefreshing || !isValid) && css.disaled
                   )}
                 >
-                  Start bot
+                  {bot.isRefreshing ? (
+                    <div className={css.loader}></div>
+                  ) : (
+                    "Start Bot"
+                  )}
                 </button>
               </li>
             ) : (
@@ -149,7 +153,11 @@ export default function BotForm() {
                     bot.isRefreshing && css.disaled
                   )}
                 >
-                  Stop bot
+                  {bot.isRefreshing ? (
+                    <div className={css.loader}></div>
+                  ) : (
+                    "Stop Bot"
+                  )}
                 </button>
               </li>
             )}
